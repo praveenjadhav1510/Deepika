@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>keerit</title>
+</head>
+<body>
+<center>	
+    <h1> Happy birthday deepa didi </h1>
+    <div class="gallery">
+        <img class="i1" src="IMG_20240305_192054.jpg"></img>
+        <img class="i2" src="IMG_20240305_192117.jpg"></img>
+        <img class="i3" src="Snapchat-1438382685.jpg"></img>
+        <img class="i4" src="Snapchat-1797572465.jpg"></img>
+        <img class="i5" src="Snapchat-1863001613.jpg"></img>
+    </div>
+    <style type="text/css">
+        body{
+            background: black;
+            color: white;
+        }
+        h1 {
+        	padding-left: 10%;
+        	font-family: monospace;
+        	text-shadow: 0px 0px 20px;
+        }
+        .gallery{
+            width: 20%;
+            height:580px;
+            display: flex;
+            gap: 5px;
+        }
+        .gallery img{
+            width:  10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid white;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    </style>
+    <script type="text/javascript">
+        const im1=document.querySelector('.i1');
+        const im2=document.querySelector('.i2');
+        const im3=document.querySelector('.i3');
+        const im4=document.querySelector('.i4');
+        const im5=document.querySelector('.i5');
+        let count=1;
+        async function sleep(ms){
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function change(){
+            while(count!=0){
+                im1.style.width = '100%';
+                im2.style.width = '10%';
+                im3.style.width = '10%';
+                im4.style.width = '10%';
+                im5.style.width = '10%';
+                await sleep(2000);
+                im2.style.width = '100%';
+                im1.style.width = '10%';
+                im3.style.width = '10%';
+                im4.style.width = '10%';
+                im5.style.width = '10%';
+                await sleep(2000);
+                im3.style.width = '100%';
+                im2.style.width = '10%';
+                im1.style.width = '10%';
+                im4.style.width = '10%';
+                im5.style.width = '10%';
+                await sleep(2000);
+                im4.style.width = '100%';
+                im2.style.width = '10%';
+                im3.style.width = '10%';
+                im1.style.width = '10%';
+                im5.style.width = '10%';
+                await sleep(2000);
+                im5.style.width = '100%';
+                im2.style.width = '10%';
+                im3.style.width = '10%';
+                im4.style.width = '10%';
+                im1.style.width = '10%';
+                await sleep(2000);
+            }
+        }
+        change();
+    </script>
+</center>
+</body>
+</html>
